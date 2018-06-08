@@ -1,0 +1,48 @@
+html {
+  // font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+.section {
+  padding: 150px 0;
+}
+
+.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav a.active {
+  border-bottom: solid 2px yellow;
+}
+nav a:hover {
+  border-bottom: solid 2px yellow;
+}
+nav a.navbar-brand:hover,
+nav a.navbar-brand {
+  border: none;
+}
