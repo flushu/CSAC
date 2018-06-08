@@ -1,8 +1,8 @@
 {
-  "name": "expensify",
+  "name": "CSAC",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "Ben Morrison",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack",
