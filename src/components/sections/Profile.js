@@ -6,8 +6,8 @@ export default props => (
     <div className={`container`}>
       <div className="row">
         <div className="col-lg-12 text-center">
-          <h2 className={`text-uppercase profile-heading`}>Profile</h2>
-          <h3 className={`text-muted profile-subheading`}>
+          <h2 className={`text-uppercase section-heading`}>Profile</h2>
+          <h3 className={`text-muted section-subheading`}>
             Profiles of Animals Alice and Julia Song took care of
           </h3>
         </div>

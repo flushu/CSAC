@@ -53,15 +53,23 @@ export default class ProfileModal extends React.Component {
         },
         {
           name: "Thor",
-          age: "7 years old",
+          age: "2 years old",
           gender: "Male",
           stories: [
             {
-              title: "Thor was brought to Dr. Song's office",
+              title:
+                "2 year old Chihuahua mix who was hit by a car a few weeks ago. 14 lbs.",
               img_src: "./images/modals/profile_story_thor.jpeg",
+              story: ["Thor was brought to Robin's house after the accident"]
+            },
+            {
+              title:
+                "He underwent left hip surgery with titanium plate and screws on May 21st 2018.",
+              img_src: "./images/modals/thor_story_2.jpg",
               story: [
-                "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.",
-                "Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                "He is doing well and is recovering with Robin, our patient. He is friendly with other dogs and is potty-trained.",
+                "He still needs to be neutered which they recommended at a later date date after he is hip healed.",
+                "Any proceeds from the adoption can go to Henry's hope. Thank you!"
               ]
             }
           ]
@@ -117,41 +125,44 @@ export default class ProfileModal extends React.Component {
               </button>
             </div>
             <div className="modal-body">
-              {Object.keys(this.state.profiles[this.props.index].stories).map(
-                key => {
-                  return (
-                    <div className="media" key={key}>
-                      <img
-                        className="align-self-start mr-3"
-                        src={
-                          this.state.profiles[this.props.index].stories[key]
-                            .img_src
-                        }
-                        alt="Generic placeholder image"
-                      />
-                      <div className="media-body">
-                        <h5 className="mt-0">
-                          {
+              <ul className="list-unstyled">
+                {Object.keys(this.state.profiles[this.props.index].stories).map(
+                  key => {
+                    return (
+                      <li className="media m-2" key={key}>
+                        <img
+                          className="align-self-start mr-3"
+                          src={
                             this.state.profiles[this.props.index].stories[key]
-                              .title
+                              .img_src
                           }
-                        </h5>
-                        {Object.keys(
-                          this.state.profiles[this.props.index].stories[key]
-                            .story
-                        ).map(key2 => (
-                          <p key={key2}>
+                          alt="Generic placeholder image"
+                        />
+                        <div className="media-body">
+                          <h5 className="mt-0">
                             {
                               this.state.profiles[this.props.index].stories[key]
-                                .story[key2]
+                                .title
                             }
-                          </p>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                }
-              )}
+                          </h5>
+                          {Object.keys(
+                            this.state.profiles[this.props.index].stories[key]
+                              .story
+                          ).map(key2 => (
+                            <p key={key2}>
+                              {
+                                this.state.profiles[this.props.index].stories[
+                                  key
+                                ].story[key2]
+                              }
+                            </p>
+                          ))}
+                        </div>
+                      </li>
+                    );
+                  }
+                )}
+              </ul>
             </div>
             <div className="modal-footer">
               <button

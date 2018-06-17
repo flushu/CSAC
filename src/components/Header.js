@@ -25,6 +25,11 @@ const Header = () => (
       >
         <ul className="navbar-nav ml-auto">
           <li className="nav-item px-1">
+            <a className="nav-link js-scroll-trigger" href="#news">
+              news <span className="badge badge-light">1</span>
+            </a>
+          </li>
+          <li className="nav-item px-1">
             <a className="nav-link js-scroll-trigger" href="#about">
               About
             </a>

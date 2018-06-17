@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./sections/Carousel";
+import News from "./sections/News";
 import About from "./sections/About";
 import Profile from "./sections/Profile";
 import ProfileModal from "./ProfileModal";
@@ -26,6 +27,7 @@ export default class HomePage extends React.Component {
       <div>
         <Header />
         <Carousel />
+        <News />
         <About />
         <Profile profileIndex={this.handleClickProfile} />
         <Story />

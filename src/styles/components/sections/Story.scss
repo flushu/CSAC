@@ -1,3 +1,24 @@
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+    background-color: rgb(255, 255, 0);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+    background-color: rgb(200, 100, 5);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    background-color: rgb(255, 255, 0);
+  }
+}
+
+#story a.contractLink .timeline-image:hover {
+  animation: pulse 1s infinite;
+}
+
 .timeline {
   position: relative;
   padding: 0;

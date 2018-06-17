@@ -37,10 +37,10 @@ button:disabled {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 nav a.active {
-  border-bottom: solid 2px yellow;
+  border-bottom: solid 2px rgb(255, 255, 0);
 }
 nav a:hover {
-  border-bottom: solid 2px yellow;
+  border-bottom: solid 2px rgb(255, 255, 0);
 }
 nav a.navbar-brand:hover,
 nav a.navbar-brand {

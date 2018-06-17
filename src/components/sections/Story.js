@@ -86,15 +86,15 @@ export default () => (
               </div>
             </li>
             <li className="timeline-inverted">
-              <NavLink to="/howto">
+              <a className="contractLink" href="/images/contract.pdf" download>
                 <div className="timeline-image">
                   <h4>
-                    Be Part
-                    <br />Of Our
-                    <br />Story!
+                    Download
+                    <br />Foster
+                    <br />Contract!
                   </h4>
                 </div>
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>

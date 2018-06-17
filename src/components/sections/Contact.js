@@ -21,15 +21,17 @@ class BootstrapContact extends React.Component {
     let phone_value = e.target.elements.phone.value;
     let message_value = e.target.elements.message.value;
     console.log(name_value, email_value, phone_value, message_value);
-    const error = {
-      name: !name_value,
-      email: !email_value,
-      phone: !phone_value,
-      message: !message_value
-    };
-    this.setState(prevState => ({
-      error
-    }));
+    // const error = {
+    //   name: !name_value,
+    //   email: !email_value,
+    //   phone: !phone_value,
+    //   message: !message_value
+    // };
+    // this.setState(prevState => ({
+    //   error
+    // }));
+    alert(`Thank you, ${name_value}. We will contact you by tonight :)`);
+    e.target.reset();
   }
   render() {
     return (
